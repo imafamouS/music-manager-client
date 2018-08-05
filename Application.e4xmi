@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_c3AF0MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.application" bindingContexts="_c3AF2cjYEeSyMNYR5xypkQ">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_c3AF0cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.window.main" label="Music Manager" width="500" height="400">
+    <children xsi:type="basic:Part" xmi:id="_tCB9UJiUEeiyWK_8VBapUw" elementId="music-manager-client.part.0" contributionURI="bundleclass://music-manager-client/com.infamous.ui.part.SongPart"/>
+    <mainMenu xmi:id="_MxX2MJiQEeiyWK_8VBapUw" elementId="music-manager-client.menu.0">
+      <children xsi:type="menu:Menu" xmi:id="_NdgjcJiQEeiyWK_8VBapUw" elementId="music-manager-client.menu.addnewsong" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_UrpIoJiREeiyWK_8VBapUw" elementId="music-manager-client.handledmenuitem.addnewsong" label="Add new song" iconURI="platform:/plugin/music-manager-client/icons/add_ico.png" command="_f1p_cJiQEeiyWK_8VBapUw"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_YumnwJiREeiyWK_8VBapUw" elementId="music-manager-client.handledmenuitem.exit" label="Exit" command="_iV6VsJiQEeiyWK_8VBapUw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_TXxLUJikEeiyWK_8VBapUw" elementId="music-manager-client.menu.help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_a-owsJiREeiyWK_8VBapUw" elementId="music-manager-client.handledmenuitem.about" label="About" command="_kdnCAJiQEeiyWK_8VBapUw"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_godf8JiREeiyWK_8VBapUw" elementId="music-manager-client.trimbar.0">
+      <children xsi:type="menu:ToolBar" xmi:id="_hfengJiREeiyWK_8VBapUw" elementId="music-manager-client.toolbar.0">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_iCB68JiREeiyWK_8VBapUw" elementId="music-manager-client.handledtoolitem.addnewsong" label="Add new song" iconURI="platform:/plugin/music-manager-client/icons/add_ico.png" tooltip="Add new song" command="_f1p_cJiQEeiyWK_8VBapUw"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_mEL-QJiQEeiyWK_8VBapUw" elementId="music-manager-client.handler.0" contributionURI="bundleclass://music-manager-client/com.infamous.ui.handler.AddNewSongHandler" command="_f1p_cJiQEeiyWK_8VBapUw"/>
+  <handlers xmi:id="_tg-f8JiQEeiyWK_8VBapUw" elementId="music-manager-client.handler.1" contributionURI="bundleclass://music-manager-client/com.infamous.ui.handler.ExitApplicationHandler" command="_iV6VsJiQEeiyWK_8VBapUw"/>
+  <handlers xmi:id="_z1JzwJiQEeiyWK_8VBapUw" elementId="music-manager-client.handler.2" contributionURI="bundleclass://music-manager-client/com.infamous.ui.handler.AboutHandler" command="_kdnCAJiQEeiyWK_8VBapUw"/>
+  <rootContext xmi:id="_c3AF2cjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_c3AF2sjYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_c3AF28jYEeSyMNYR5xypkQ" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_f1p_cJiQEeiyWK_8VBapUw" elementId="music-manager-client.command.addnewsongcommand" commandName="AddNewSongCommand"/>
+  <commands xmi:id="_iV6VsJiQEeiyWK_8VBapUw" elementId="music-manager-client.command.exitapplicationcommand" commandName="ExitApplicationCommand"/>
+  <commands xmi:id="_kdnCAJiQEeiyWK_8VBapUw" elementId="music-manager-client.command.aboutcommand" commandName="AboutCommand"/>
+  <addons xmi:id="_c3AF0sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_c3AF08jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_c3AF1MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_c3AF1cjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_c3AF1sjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_c3AF18jYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_c3AF2MjYEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
